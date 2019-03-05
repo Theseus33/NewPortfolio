@@ -12,6 +12,8 @@
     background-image: url(images/background1.jpg);
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+    overflow-y: auto; 
+    overflow: hidden;
 }
 
 .opening h1 {
@@ -25,7 +27,7 @@
 .opening h2{
     padding: 1vh;
     color: white;
-    font:4vh VT323;
+    font:4vh Montserrat;
     text-align: center;
     margin: 0;
 
@@ -33,4 +35,5 @@
 
 .secondDiv {
     background-color: red;
+    height: 50vh;
 }
