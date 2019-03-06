@@ -5,12 +5,16 @@
 body {
   background: #f5f5f5;
   color: #333;
+  line-height: 1.5em;
+  font-family: "Raleway", sans-serif;
 }
 
 .navbar {
   border-bottom: #008 2px solid;
   opacity: 0.8;
+  font-family: "Open Sans", sans-serif;
 }
+
 .opening {
   position: relative;
   height: 100vh;
@@ -27,7 +31,7 @@ body {
 .opening h1 {
   padding-top: 40vh;
   color: white;
-  font: 7vh Nunito Sans;
+  font: 7vh;
   text-align: center;
   margin: 0;
 }
@@ -35,18 +39,19 @@ body {
 .opening h2 {
   padding: 1vh;
   color: white;
-  font: 4vh Montserrat;
+  font: 4vh;
   text-align: center;
   margin: 0;
 }
 
-.devicon-git-plain {
-  font-size: 20rem;
+h1 {
+  font-family: "Open Sans", sans-serif;
 }
 
 .skills {
   background: linear-gradient(#000046, #1cb5e0);
   color: white;
+  padding-bottom: 60px;
 }
 
 /* Wobble Vertical */
