@@ -11,6 +11,7 @@ body {
 html {
   font-size: 62.5%;
 }
+
 .navbar {
   border-bottom: #008 0.2rem solid;
   opacity: 0.8;
@@ -61,6 +62,7 @@ html {
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 5rem;
+  line-height: 7.5rem;
 }
 
 p {
@@ -69,9 +71,14 @@ p {
 }
 
 .skills {
-  background: linear-gradient(#000046, #1cb5e0);
+  background: linear-gradient(#1cb5e0, #000046);
   color: white;
   padding-bottom: 6rem;
+}
+
+.svgImage {
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Wobble Vertical */
