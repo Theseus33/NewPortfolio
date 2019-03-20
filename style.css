@@ -81,9 +81,19 @@ p {
   margin-bottom: 2rem;
 }
 
+.projects {
+  background-color: orangered;
+}
+
 .card-img {
   height: 200px;
   width: 100%;
+}
+
+.github-btn {
+  display: inline-block;
+  margin: 0 auto;
+  left: 3em;
 }
 .card-flip {
   perspective: 1000px;
@@ -97,7 +107,7 @@ p {
 .card-flip,
 .front,
 .back {
-  width: 100%;
+  width: 300px;
   height: 500px;
 }
 
