@@ -102,6 +102,30 @@ p {
   object-fit: cover;
 }
 
+.fab {
+  font-size: 3rem;
+}
+
+.project-tools {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.card-text {
+  font-size: 2rem;
+}
+
 .card-img {
   height: 200px;
   width: 100%;
