@@ -1,7 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
+
 body {
   background: #f5f5f5;
   color: #333;
@@ -12,6 +13,10 @@ html {
   font-size: 62.5%;
 }
 
+.row {
+  width: 100%;
+  overflow: hidden;
+}
 .navbar {
   border-bottom: #008 0.2rem solid;
   opacity: 0.6;
@@ -35,6 +40,7 @@ html {
   border-bottom-right-radius: 50% 20%;
   overflow-y: auto;
   overflow: hidden;
+  width: 100%;
 }
 
 .opening h1 {
@@ -44,10 +50,11 @@ html {
   line-height: 7.5rem;
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 
 .opening h2 {
-  padding: 1vh;
+  padding: 1vh 0;
   color: white;
   font-size: 3rem;
   line-height: 4.5rem;
@@ -78,6 +85,11 @@ p {
   background: linear-gradient(#1cb5e0, #000046);
   color: white;
   padding-bottom: 6rem;
+}
+
+.tech {
+  width: 100%;
+  overflow: hidden;
 }
 
 .svgImage {
