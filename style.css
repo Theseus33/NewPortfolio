@@ -17,6 +17,7 @@ html {
   opacity: 0.6;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -70,6 +71,9 @@ p {
   line-height: 2.4rem;
 }
 
+.aboutMe {
+  padding: 5rem 20rem;
+}
 .skills {
   background: linear-gradient(#1cb5e0, #000046);
   color: white;
@@ -180,6 +184,21 @@ li.tools:not(:last-child) {
 
 .back {
   transform: rotateY(180deg);
+}
+
+.contact-list {
+  width: 100%;
+}
+
+.contact-icon {
+  padding: 2rem;
+}
+
+.contact {
+  background: linear-gradient(90deg, #000046 20px, transparent 1%) center,
+    linear-gradient(#000046 20px, transparent 1%) center, #1cb5e0;
+  background-size: 22px 22px;
+  color: #eee;
 }
 
 /* Wobble Vertical */
