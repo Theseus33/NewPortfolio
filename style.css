@@ -14,7 +14,7 @@ html {
 
 .navbar {
   border-bottom: #008 0.2rem solid;
-  opacity: 0.8;
+  opacity: 0.6;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
 }
@@ -102,8 +102,15 @@ p {
   object-fit: cover;
 }
 
-.fab {
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 100%;
+}
+
+i {
   font-size: 3rem;
+  text-align: center;
 }
 
 .project-tools {
@@ -112,13 +119,13 @@ p {
   margin: 0 auto;
 }
 
-li {
+li.tools {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-li:not(:last-child) {
+li.tools:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
 
