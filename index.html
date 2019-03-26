@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
     <div class="container header">
       <a href="index.html" class="navbar-brand">Rana Bhattacharyya</a>
       <button class="navbar-toggler btn btn-outline-light" data-toggle="collapse" data-target="#navbarCollapse">
@@ -48,7 +48,7 @@
 
   <section class="opening" id="home">
     <div class="row">
-      <div class="col text-center  ">
+      <div class="col text-center py-5 ">
         <h1>Rana Bhattacharyya</h1>
         <h2>Software Developer</h2>
         <a href="#about" class="btn btn-outline-light">Find out more</a>
@@ -60,7 +60,7 @@
     <section id="about">
 
       <div class="row">
-        <div class="col-sm-12 text-center  tech">
+        <div class="col-sm-12 text-center py-5 tech">
           <h1>About Me</h1>
         </div>
         <p class="lead mx-auto aboutMe tech">
@@ -81,7 +81,7 @@
   <section id="skills" class="skills">
 
     <div class="row">
-      <div class="col-sm-12 text-center  tech">
+      <div class="col-sm-12 text-center py-5 tech">
         <h1>Skills</h1>
       </div>
     </div>
@@ -184,16 +184,18 @@
 
   <section class="projects" id="projects">
 
-    <div class="bg-video videoContainer hide-for-small-only">
-      <video class="bg-video-content" autoplay muted loop>
-        <source src="images/Travaho.mp4" type="video/mp4">
-        <source src="images/Travaho.webm" type="video/webm">
-      </video>
+    <div class="outer">
+      <div class="bg-video videoContainer hide-for-small-only">
+        <video class="bg-video-content" autoplay muted loop>
+          <source src="images/Travaho.mp4" type="video/mp4">
+          <source src="images/Travaho.webm" type="video/webm">
+        </video>
+      </div>
     </div>
 
 
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4 text-center ">
+      <div class="col-sm-12 text-center py-5">
         <h1>Projects</h1>
       </div>
     </div>
@@ -379,11 +381,11 @@
   <section class="contact" id="contact">
 
     <div class="row">
-      <div class="col text-center ">
+      <div class="col text-center py-5">
         <h1>Contact Me</h1>
       </div>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center contact-info">
 
 
       <a href="https://linkedin.com/in.rana-bhattacharyya" target="_blank"><i class="fab fa-linkedin fa-10x contact-icon hvr-wobble-vertical"></i></a>
@@ -444,6 +446,31 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+
+  <script>
+    //initialize Bootstraps scrollspy
+    $('body').scrollspy({
+      target: '#main-nav'
+    });
+
+    //Smooth Scrolling
+
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
+  </script>
 </body>
 
 </html>

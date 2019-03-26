@@ -36,6 +36,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(images/background1.jpg);
+  min-height: 700px;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   overflow-y: auto;
@@ -211,6 +212,7 @@ li.tools:not(:last-child) {
     linear-gradient(#000046 20px, transparent 1%) center, #1cb5e0;
   background-size: 22px 22px;
   color: #eee;
+  padding-bottom: 5rem;
 }
 
 /* Wobble Vertical */
